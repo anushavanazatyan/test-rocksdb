@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
   //  assert(status.ok());
 
     options.error_if_exists = true; // - rise error if db exists
-    delete db;
+    
     int bb;
     printf("everything ok ");
     scanf(" press key %d", &bb);
@@ -24,5 +24,6 @@ int main(int argc, char *argv[])
     {
         printf("successed to create and write in base");
     }
+    delete db;
     return a.exec();
 }
